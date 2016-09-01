@@ -13,7 +13,9 @@ h1 {
   width: 27.375em;
   height: 27.375em;
   border: 1px solid white;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin: 0 2em 0 26em;
+  float: left;
 }
 .slot {
   display: block;
@@ -21,5 +23,26 @@ h1 {
   width: 9em;
   height: 9em;
   border: 1px solid white;
+}
+#spinButton {
+  position: absolute;
+  top: 8.9em;
+  left: 7em;
+  display: inline-block;
+  padding: 1em 1em;
+  background-color: #FFEF66;
+  border: none;
+  color: #000;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 2em;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 0.5em #999;
+}
+#spinButton:hover {
+  background-color: #ffe400;
 }
 
