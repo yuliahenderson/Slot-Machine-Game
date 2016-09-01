@@ -4,21 +4,22 @@ body {
 }
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 4em;
+  font-size: 3.5em;
   letter-spacing: 5px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0.5em auto;
 }
 #slotMachine {
   width: 27.375em;
   height: 27.375em;
-  border: 1px solid black;
-  margin: 1em auto;
+  border: 1px solid white;
+  margin: 0 auto;
 }
 .slot {
   display: block;
   float: left;
   width: 9em;
   height: 9em;
-  border: 1px solid black;
+  border: 1px solid white;
 }
+
