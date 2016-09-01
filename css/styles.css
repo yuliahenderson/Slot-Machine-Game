@@ -10,19 +10,37 @@ h1 {
   margin: 0.5em auto;
 }
 #slotMachine {
-  width: 27.375em;
-  height: 27.375em;
+  /*width: 27.375em;
+  height: 27.375em;*/
   border: 1px solid white;
   /*margin: 0 auto;*/
   margin: 0 2em 0 26em;
   float: left;
 }
-.slot {
+#rowOne {
+  float: left;
+}
+#rowTwo {
+  float: left;
+}
+#rowThree {
+  float: left;
+}
+  .slot {
   display: block;
   float: left;
   width: 9em;
   height: 9em;
   border: 1px solid white;
+}
+#rowOne {
+  margin: 3px;
+}
+#rowTwo {
+  margin: 3px;
+}
+#rowThree {
+  margin: 3px;
 }
 #spinButton {
   position: absolute;
