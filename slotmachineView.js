@@ -16,9 +16,14 @@ class MusicSlot {
     //   slotElement.innerHTML = '<img src="' + img + '" width="144px">';
     //   slotMachine.appendChild(slotElement);
     // }
+    let winElement = document.createElement('div');
+    winElement.setAttribute('id', 'win');
+    document.body.appendChild(winElement);
+
     const rowOne = document.createElement('div');
     rowOne.setAttribute('id', 'rowOne');
     slotMachine.appendChild(rowOne);
+
     for (let i = 0; i < 3; i++) {
       let slotElementOne = document.createElement('div');
       slotElementOne.setAttribute('class', 'slotRowOne');
@@ -27,6 +32,13 @@ class MusicSlot {
       slotElementOne.innerHTML = '<img src="' + img + '" width="144px">';
       rowOne.appendChild(slotElementOne);
     }
+    let a = document.getElementsByClassName('slotRowOne')[0].innerHTML;
+    let b = document.getElementsByClassName('slotRowOne')[1].innerHTML;
+    let c = document.getElementsByClassName('slotRowOne')[2].innerHTML;
+
+    if (a === b && b === c) {
+       document.getElementById('win').innerHTML = 'You Won!';
+        }
     const rowTwo = document.createElement('div');
     rowTwo.setAttribute('id', 'rowTwo');
     slotMachine.appendChild(rowTwo);
@@ -39,6 +51,14 @@ class MusicSlot {
       slotElementTwo.innerHTML = '<img src="' + img + '" width="144px">';
       rowTwo.appendChild(slotElementTwo);
     }
+    let d = document.getElementsByClassName('slotRowTwo')[0].innerHTML;
+    let e = document.getElementsByClassName('slotRowTwo')[1].innerHTML;
+    let f = document.getElementsByClassName('slotRowTwo')[2].innerHTML;
+
+    if (d === e && e === f) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    }
+
     const rowThree = document.createElement('div');
     rowThree.setAttribute('id', 'rowThree');
     slotMachine.appendChild(rowThree);
@@ -51,6 +71,26 @@ class MusicSlot {
       slotElementThree.innerHTML = '<img src="' + img + '" width="144px">';
       rowThree.appendChild(slotElementThree);
     }
+    let g = document.getElementsByClassName('slotRowThree')[0].innerHTML;
+    let h = document.getElementsByClassName('slotRowThree')[1].innerHTML;
+    let j = document.getElementsByClassName('slotRowThree')[2].innerHTML;
+
+    if (g === h && h === j) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    } else if (a === e && e === j) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    } else if (c === e && e === g) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    }
+    else if (a === d && d === g) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    }
+    else if (b === e && e === h) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    }
+    else if (c === f && f === j) {
+      document.getElementById('win').innerHTML = 'You Won!';
+    }
     let spinButton = document.createElement('button');
     spinButton.setAttribute('id', 'spinButton');
     let buttonText = document.createTextNode("SPIN");
@@ -61,7 +101,5 @@ class MusicSlot {
     });
   }
   }
-
-
 let newMachine = new MusicSlot();
 newMachine.createSlotMachine();
