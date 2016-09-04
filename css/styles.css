@@ -7,45 +7,46 @@ h1 {
   font-size: 3.5em;
   letter-spacing: 5px;
   text-align: center;
-  margin: 0.5em auto;
+  margin: 0.3em auto;
 }
 #slotMachine {
-  /*width: 27.375em;
-  height: 27.375em;*/
-  border: 1px solid white;
+  width: 28.15em;
+  height: 28em;
+  border: 30px solid #c4c7ce;
+  border-radius: 20px;
   /*margin: 0 auto;*/
-  margin: 0 2em 0 26em;
+  margin: 0 2em 0 23em;
   float: left;
+    box-shadow:
+              10px 10px #999;
+              10px 10px #999;
+              10px 10px #999;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }
 #rowOne {
   float: left;
+  margin: 3px;
 }
 #rowTwo {
   float: left;
+  margin: 3px;
 }
 #rowThree {
   float: left;
+  margin: 3px;
 }
-  .slot {
+/*  .slot {
   display: block;
   float: left;
   width: 9em;
   height: 9em;
   border: 1px solid white;
-}
-#rowOne {
-  margin: 3px;
-}
-#rowTwo {
-  margin: 3px;
-}
-#rowThree {
-  margin: 3px;
-}
+}*/
 #spinButton {
   position: absolute;
-  top: 8.9em;
-  left: 7em;
+  top: 10em;
+  left: 5.5em;
   display: inline-block;
   padding: 1em 1em;
   background-color: #FFEF66;
@@ -58,9 +59,89 @@ h1 {
   text-decoration: none;
   outline: none;
   border-radius: 15px;
-  box-shadow: 0 0.5em #999;
+  box-shadow:
+              5px 5px #999;
+              5px 5px #999;
+              5px 5px #999;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }
 #spinButton:hover {
   background-color: #ffe400;
+/*  box-shadow:
+                5px 5px #999,
+                5px 5px #999,
+                5px 5px #999;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);*/
+}
+#win {
+  float: right;
+  position: relative;
+  right: 5em;
+  top: 7em;
+/*  padding: 1em 1em;
+  background-color: #00B843;
+  border: none;
+  text-align: center;*/
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-weight: bold;
+/*  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px #999;
+  transform: translateX(-3px);*/
 }
 
+@-webkit-keyframes fadeIn {from {
+  opacity: 0;} to {opacity: 1;}}
+@-moz-keyframes fadeIn { from {
+  opacity: 0;} to {opacity: 1;}}
+@keyframes fadeIn { from {opacity: 0;}
+to {opacity: 1;} }
+
+.slotRowOne {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+.slotRowTwo {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.slotRowThree {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
