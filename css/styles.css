@@ -15,7 +15,7 @@ h1 {
   border: 30px solid #c4c7ce;
   border-radius: 20px;
   /*margin: 0 auto;*/
-  margin: 0 2em 0 23em;
+  margin: 0 2em 5em 23em;
   float: left;
     box-shadow:
               10px 10px #999;
@@ -23,6 +23,14 @@ h1 {
               10px 10px #999;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  font-size: 0;
+  clear:both;
+  height: 0;
 }
 #rowOne {
   float: left;
@@ -75,10 +83,17 @@ h1 {
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);*/
 }
+@-webkit-keyframes fadeIn {from {
+  opacity: 0;} to {opacity: 1;}}
+@-moz-keyframes fadeIn { from {
+  opacity: 0;} to {opacity: 1;}}
+@keyframes fadeIn { from {opacity: 0;}
+to {opacity: 1;} }
+
 #win {
   float: right;
   position: relative;
-  right: 5em;
+  right: 4em;
   top: 7em;
 /*  padding: 1em 1em;
   background-color: #00B843;
@@ -87,6 +102,16 @@ h1 {
   letter-spacing: 3px;
   font-size: 2em;
   font-weight: bold;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 /*  cursor: pointer;
   text-decoration: none;
   outline: none;
@@ -94,13 +119,6 @@ h1 {
   box-shadow: 5px 5px #999;
   transform: translateX(-3px);*/
 }
-
-@-webkit-keyframes fadeIn {from {
-  opacity: 0;} to {opacity: 1;}}
-@-moz-keyframes fadeIn { from {
-  opacity: 0;} to {opacity: 1;}}
-@keyframes fadeIn { from {opacity: 0;}
-to {opacity: 1;} }
 
 .slotRowOne {
   opacity: 0;
@@ -113,8 +131,8 @@ to {opacity: 1;} }
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   animation-duration: 1s;
-
 }
+
 .slotRowTwo {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
@@ -126,9 +144,9 @@ to {opacity: 1;} }
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .slotRowThree {
   opacity: 0;
@@ -141,7 +159,8 @@ to {opacity: 1;} }
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 2.2s;
-  -moz-animation-delay: 2.2s;
-  animation-delay: 2.2s;
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
+
