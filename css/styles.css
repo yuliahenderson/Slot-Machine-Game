@@ -193,3 +193,9 @@ to {opacity: 1;} }
   }
 }
 
+@media(max-width: 1200px) {
+#spinButton {
+right: 1.3em;
+}
+}
+
