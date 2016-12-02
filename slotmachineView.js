@@ -65,28 +65,28 @@ class MusicSlot {
     let slot9 = document.getElementsByClassName('slotRowThree')[2].innerHTML;
     if (slot1 === slot4 && slot4 === slot7) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot2 === slot5 && slot5 === slot8) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot3 === slot6 && slot6 === slot9) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot1 === slot5 && slot5 === slot9) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot7 === slot5 && slot5 === slot3) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot1 === slot2 && slot2 === slot3) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot4 === slot5 && slot5 === slot6) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else if (slot7 === slot8 && slot8 === slot9) {
       document.getElementById('win').innerHTML = 'You Won!';
-      document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
+      // document.getElementById('sound').innerHTML = '<audio src="applause.ogg" autoplay></audio>';
     } else {
       document.getElementById('win').innerHTML = 'Spin again...';
     }
